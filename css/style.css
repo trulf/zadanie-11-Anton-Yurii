@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff2') format('woff2'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.svg#latobold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-italic.eot');
+    src: url('../fonts/lato-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-italic.woff2') format('woff2'),
+         url('../fonts/lato-italic.woff') format('woff'),
+         url('../fonts/lato-italic.svg#latoitalic') format('svg');
+    font-weight: normal;
+    font-style: initial;
+
+}
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular.woff2') format('woff2'),
+         url('../fonts/lato-regular.woff') format('woff'),
+         url('../fonts/lato-regular.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	
+}
+body{	
+	font:400 16px/1.25 Lato, Arial, Tahoma, Verdana, sans-serif;
+	color: #848789;
+}
+ul{
+	list-style:note;
+}
+a{
+	text-decoration:none;
+}
+.wrapper {
+	overflow:hidden;
+	position: relative;
+}
+
+
+img{
+	max-width: 100%;
+	height:auto;
+}
+.container{
+	display: block;
+	
+	max-width:1600px;
+	padding:0 15px;
+	margin:0 auto;
+	
+}
+
+.header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	padding: 35px 0;
+}
+.header .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-slider{
+	align-items: center;
+}
+.header .logo{
+	margin: 0 32px;
+	flex-shrink: 0;
+	flex-basis: 94px;
+}
+.header ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: calc(50% - 47px);
+	list-style-type: none;
+}
+.header .lmenu{
+	justify-content: flex-end;
+}
+.header li a{
+	color: #4d4959;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: block;
+	padding: 5px 32px;
+}
+.header li{
+	position: relative;
+}
+.header li:not(:last-child):after{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background: #4d4959;
+	right: -1px;
+	bottom: 8px;
+}
+.cont1{
+	text-align:  center;
+	padding: 117px 0 144px;
+	
+}
+.hbike{
+	color: #353738;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;	
+	letter-spacing: 2px;
+	margin: 33px 0;
+}
+.text1{
+	
+	color: #848789;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.889;
+	padding-left: calc(50% - 540px);
+	padding-right: calc(50% - 540px);
+	letter-spacing: 2px;
+}
+.cont2{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	
+}
+.cont21{
+	position: relative;
+	width: 70%;
+}
+.cont22{
+	
+	width: 30%;
+}
+.logo2{
+	position: absolute;
+	width: 113px;
+	height: 118px;
+	left: calc( 50% - 56.5px );
+	top: calc( 50% - 59px );
+	z-index: 1000;
+	
+}
+.cont22text{
+	padding: 69px 68px 50px;
+	text-align: center;
+	
+}
+.treangle {
+    position: relative;
+}
+
+.treangle::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    pointer-events: none;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 13px;
+    height: 0;
+    width: 0;
+    border-top-color: #ffffff;
+    margin-left: -13px;
+}
+.icon2{
+	margin-bottom: 24px;
+}
+.text2 {
+	color: #848789;
+	font-size: 12px;
+	letter-spacing: 2px;
+	line-height: 1.875;
+	max-width: 410px;
+}
+.hbike2{
+	color: #353738;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 2px;
+	text-transform: uppercase;	
+}
+.cont3{
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+.logo3{
+	position: absolute;
+	width: 177px;
+	height: 152px;
+	left: calc( 50% - 88.5px );
+	top: calc( 50% - 76px );
+	z-index: 1000;
+}
+.cont4{
+	display: flex;
+	flex-direction: row;
+}
+.cont41{
+	position: relative;
+	width: 33.3%;
+}
+.cont42{
+	
+	width: 33.3%;
+}
+.cont43{
+	
+	width: 33.3%;
+}
+.logo4{
+	position: absolute;
+	width: 208px;
+	height: 67px;
+	left: calc( 50% - 104px );
+	top: calc( 50% - 33.5px );
+	z-index: 1000;
