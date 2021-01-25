@@ -66,7 +66,7 @@ img{
 	
 }
 
-.header{
+.header .navig{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -74,7 +74,7 @@ img{
 	z-index: 100;
 	padding: 35px 0;
 }
-.header .container{
+.header .navig{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -87,7 +87,10 @@ img{
 	flex-shrink: 0;
 	flex-basis: 94px;
 }
-.header ul{
+.header .mob-logo{
+	display: none;
+}
+.header .navig ul{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -270,4 +273,69 @@ img{
 	left: calc( 50% - 104px );
 	top: calc( 50% - 33px );
 	z-index: 1000;
+}
+.menu-b{
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	height: 28px;
+	width: 28px;
+	cursor: pointer;
+}
+.menu-b span{
+width: 100%;
+height: 2px;
+position: absolute;
+top: 13px;
+left: 0;
+background: #6dc196;
+
+}
+.menu-b:before,
+.menu-b:after{
+	content: '' ;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	top: 0 ;
+	background: #6dc196;
+}
+.menu-b:after{
+	top: auto;
+	bottom: 0;
+}
+
+
+
+
+
+
+@media(max-width: 768px){
+.header .navig,
+.header .logo{
+	display: none;
+}
+.header .mob-logo{
+	display: block;
+	position: relative;
+	left: 10px;
+	top: 10px;
+	height: 80px;
+	margin: 0;
+
+}
+
+.header .mob-logo .img{
+	height: 100%;
+}
+
+
+
+
+
+
+
+
 }
