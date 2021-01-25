@@ -290,6 +290,7 @@ position: absolute;
 top: 13px;
 left: 0;
 background: #6dc196;
+z-index: 12;
 
 }
 .menu-b:before,
@@ -313,8 +314,31 @@ background: #6dc196;
 
 
 @media(max-width: 768px){
-.header .navig,
+.header{
+	padding: 0;
+}
 .header .logo{
+	display: none;
+}
+.header .navig{
+	display: flex;
+	justify-content:flex-start;
+	flex-direction: column;
+	padding: 75px 10px 20px;
+	right: -300;
+	position: absolute;
+	top: 0;
+	background: #fff;
+	min-height: 100vh;
+	width: 320px;
+	z-index: 11;
+	transition: .3s;
+}
+.header ul{
+	display: block;
+	width: 100%;
+}
+.header li:after{
 	display: none;
 }
 .header .mob-logo{
