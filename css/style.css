@@ -146,30 +146,51 @@ img{
 .cont2{
 	display: flex;
 	flex-direction: row;
-	align-items: stretch;
+	
 	
 }
 .cont21{
 	position: relative;
-	width: 70%;
+	width: 66.6%;
+	flex-grow: 1;
+	overflow: hidden;
 }
 .cont22{
+
 	text-align: center;
-	width: 30%;
+	width: 33.3%;
+	flex-grow: 1;
+	min-width: 400px;
 }
 .logo2{
 	position: absolute;
-	width: 113px;
-	height: 118px;
-	left: calc( 50% - 56px );
-	top: calc( 50% - 59px );
+	left: 50% ;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	z-index: 1000;
+	max-width: 100%;
+
+}
+.foto1{
+	position: absolute;
+	min-width: 100%;
+	min-height:100%;
+	left: 50% ;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-height: none;
 	
 }
+
 .cont22text{
 	padding: 69px 68px 50px;
 	text-align: center;
 	
+}
+.cont22foto{
+	position: relative;
+	overflow: hidden;
+	min-height: 200px;
 }
 .treangle {
     position: relative;
@@ -193,6 +214,7 @@ img{
 	margin-bottom: 24px;
 }
 .text2 {
+	text-align: justify;
 	color: #848789;
 	font-size: 12px;
 	letter-spacing: 2px;
@@ -226,15 +248,20 @@ img{
 }
 .cont41{
 	position: relative;
+	flex-grow: 1;
+	overflow: hidden;
 	width: 33.3%;
 }
 .cont42{
 	
+	flex-grow: 1;
 	width: 33.3%;
 }
 .cont43{
-	
+	position: relative;
+	flex-grow: 1;
 	width: 33.3%;
+	overflow: hidden;
 }
 .logo4{
 	position: absolute;
